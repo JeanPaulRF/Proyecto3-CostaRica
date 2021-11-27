@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+        <title>Proyecto 3 Mapa de Cost Rica</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <style>
+        body { margin: 0; padding: 0; }
+        </style>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+    </head>
+    <body>
+        <style>
+            .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <div id='map' style='width: 1535px; height: 630px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoiam14MyIsImEiOiJja3U4dDg1N2owMDd3MnVyczZ6eGVrejBrIn0.bdRyBhkl-jZwGO5A53t1Rw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/jmx3/ckwfryau52o3314rx2nzikyes',
+                center: [ -83, 9.9464 ],
+                zoom: 7,
+                pitch: 0,
+
+            });
+            
+        </script>
+        <h1>Proyecto 3 Mapa de Cost Rica</h1>
+    </body>
+</html>
